@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academics | JNNCE MCA</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#f4f7fb;
+        }
+
+        /* HEADER */
+
+        header{
+            background:#002147;
+            padding:15px 40px;
+        }
+
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            color:white;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        .nav-links{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        .nav-links a{
+            text-decoration:none;
+            color:white;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        .nav-links a:hover{
+            color:orange;
+        }
+
+        /* BANNER */
+
+        .page-banner{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .page-banner h1{
+            font-size:45px;
+            font-weight:700;
+        }
+
+        /* SECTION */
+
+        .content-section{
+            padding:60px 8%;
+        }
+
+        .content-section h2{
+            text-align:center;
+            color:#002147;
+            margin-bottom:40px;
+            font-size:38px;
+        }
+
+        /* FACULTY SECTION */
+
+        .faculty-container{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:25px;
+        }
+
+        .faculty-card{
+            width:75%;
+            background:white;
+            display:flex;
+            align-items:center;
+            gap:20px;
+            padding:18px;
+            border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .faculty-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .faculty-card img{
+            width:110px;
+            height:110px;
+            border-radius:10px;
+            object-fit:cover;
+        }
+
+        .faculty-info h3{
+            color:#002147;
+            margin-bottom:5px;
+            font-size:22px;
+        }
+
+        .faculty-info h4{
+            color:orange;
+            margin-bottom:10px;
+            font-size:17px;
+        }
+
+        .faculty-info p{
+            color:#444;
+            line-height:1.6;
+            font-size:15px;
+        }
+
+        /* LAB SECTION */
+
+        .lab-section ul{
+            max-width:600px;
+            margin:auto;
+            line-height:2;
+            font-size:18px;
+            color:#333;
+        }
+
+        /* TABLE */
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+            background:white;
+        }
+
+        table,th,td{
+            border:1px solid #ccc;
+        }
+
+        th{
+            background:#002147;
+            color:white;
+        }
+
+        th,td{
+            padding:15px;
+            text-align:center;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background:#002147;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width:768px){
+
+            .navbar{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .nav-links{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .page-banner h1{
+                font-size:32px;
+            }
+
+            .faculty-card{
+                width:95%;
+                flex-direction:column;
+                text-align:center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">JNNCE MCA</div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="timetable.html">Time Table</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://jams-jnnce.in/" target="_blank">Login</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- PAGE BANNER -->
+
+    <section class="page-banner">
+
+        <h1>Academic Information</h1>
+
+    </section>
+
+    <!-- FACULTY SECTION -->
+
+    <section class="content-section">
+
+        <h2>Faculty Members</h2>
+
+        <div class="faculty-container">
+
+            <!-- Faculty 1 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Dr. Ravi Kumar</h3>
+
+                    <h4>Head of Department</h4>
+
+                    <p>
+                        Ph.D in Computer Science with 15 years of teaching
+                        experience in MCA and Engineering education.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 2 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Mrs. Priya S</h3>
+
+                    <h4>Assistant Professor</h4>
+
+                    <p>
+                        MCA, pursuing Ph.D with specialization in Artificial
+                        Intelligence and Machine Learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 3 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Mr. Kiran B</h3>
+
+                    <h4>Assistant Professor</h4>
+
+                    <p>
+                        MCA graduate specialized in Web Technology, Java
+                        Programming and Database Systems.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 4 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Dr. Shwetha R</h3>
+
+                    <h4>Professor</h4>
+
+                    <p>
+                        Ph.D in Computer Applications with expertise in
+                        Cyber Security and Cloud Computing.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 5 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Mr. Naveen Kumar</h3>
+
+                    <h4>Assistant Professor</h4>
+
+                    <p>
+                        MCA qualified faculty focusing on Python Programming
+                        and Data Structures concepts.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 6 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Mrs. Anjali M</h3>
+
+                    <h4>Assistant Professor</h4>
+
+                    <p>
+                        MCA graduate with experience in Software Engineering
+                        and Database Management Systems.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 7 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Mr. Santhosh P</h3>
+
+                    <h4>Assistant Professor</h4>
+
+                    <p>
+                        M.Tech and MCA qualified lecturer specialized in
+                        Networking and Operating Systems.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 8 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Dr. Deepa N</h3>
+
+                    <h4>Senior Professor</h4>
+
+                    <p>
+                        Ph.D holder with expertise in Artificial Intelligence,
+                        Machine Learning and Research.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 9 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/men/70.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Mr. Arun H</h3>
+
+                    <h4>Assistant Professor</h4>
+
+                    <p>
+                        MCA graduate specialized in Mobile Application
+                        Development and Java Technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Faculty 10 -->
+
+            <div class="faculty-card">
+
+                <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Faculty">
+
+                <div class="faculty-info">
+
+                    <h3>Mrs. Kavya S</h3>
+
+                    <h4>Assistant Professor</h4>
+
+                    <p>
+                        MCA qualified faculty with experience in Full Stack
+                        Development and UI/UX technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+  
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 MCA Department | JNNCE Shimoga</p>
+
+    </footer>
+
+</body>
+
+</html>

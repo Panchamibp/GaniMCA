@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About JNNCE</title>
+    <title>Jawaharlal Nehru New College of Engineering | MCA Department</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
 
@@ -21,7 +21,6 @@
 
         body{
             background:#f4f7fb;
-            color:#333;
         }
 
         /* HEADER */
@@ -37,21 +36,52 @@
             align-items:center;
         }
 
-        .logo{
-            color:white;
-            font-size:30px;
-            font-weight:bold;
+        /* LOGO + COLLEGE NAME */
+
+        .college-brand{
+            display:flex;
+            align-items:center;
+            gap:15px;
         }
 
+        .college-brand img{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            background:white;
+            padding:5px;
+        }
+
+        .college-name{
+            color:white;
+            text-align:center;
+        }
+
+        .college-name h1{
+            font-size:28px;
+            font-weight:800;
+            line-height:1.3;
+        }
+
+        .college-name p{
+            font-size:16px;
+            color:#f5c542;
+            font-weight:500;
+        }
+
+        /* NAVIGATION */
+
         .nav-links{
-            list-style:none;
             display:flex;
+            list-style:none;
             gap:20px;
         }
 
         .nav-links a{
-            text-decoration:none;
             color:white;
+            text-decoration:none;
+            font-size:16px;
+            font-weight:500;
             transition:0.3s;
         }
 
@@ -59,120 +89,61 @@
             color:orange;
         }
 
-        /* BANNER */
+        /* HERO SECTION */
 
-        .page-banner{
-            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-            url('https://cdn.corenexis.com/files/c/8736211720.jpg');
-            background-size:cover;
-            background-position:center;
+        .hero{
+            height:90vh;
+            background:url('https://cdn.corenexis.com/files/c/8736211720.jpg') center/cover no-repeat;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
             color:white;
-            text-align:center;
-            padding:100px 20px;
         }
 
-        .page-banner h1{
+        .hero-content{
+            background:rgba(0,0,0,0.5);
+            padding:40px;
+            border-radius:10px;
+        }
+
+        .hero-content h1{
             font-size:55px;
-            font-weight:700;
+            margin-bottom:20px;
         }
 
-        /* CONTENT SECTION */
-
-        .content-section{
-            padding:60px 8%;
-            text-align:center;
-        }
-
-        .content-section h2{
-            font-size:40px;
-            color:#002147;
+        .hero-content p{
+            font-size:22px;
             margin-bottom:25px;
         }
 
-        .content-section p{
+        .hero-content button{
+            padding:12px 25px;
+            border:none;
+            background:orange;
+            color:white;
             font-size:18px;
-            line-height:1.8;
-            max-width:900px;
-            margin:auto;
+            border-radius:5px;
+            cursor:pointer;
         }
 
-        /* FACILITY SECTION */
+        /* ABOUT SECTION */
 
-        .facility-container{
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            gap:35px;
-            padding:40px 8%;
-        }
-
-        .facility-card{
-            width:80%;
-            background:white;
-            border-radius:15px;
-            overflow:hidden;
-            box-shadow:0 5px 15px rgba(0,0,0,0.1);
-            transition:0.4s;
-        }
-
-        .facility-card:hover{
-            transform:translateY(-8px);
-        }
-
-        .facility-card img{
-            width:100%;
-            height:350px;
-            object-fit:cover;
-        }
-
-        .facility-info{
-            padding:30px;
+        .about-section{
+            padding:60px 10%;
             text-align:center;
         }
 
-        .facility-info h3{
-            color:#002147;
-            margin-bottom:15px;
-            font-size:32px;
-        }
-
-        .facility-info p{
-            font-size:17px;
-            line-height:1.8;
-            color:#555;
-        }
-
-        /* PLACEMENT SECTION */
-
-        .placement-box{
-            background:white;
-            width:70%;
-            margin:auto;
-            padding:35px;
-            border-radius:15px;
-            box-shadow:0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .placement-box h3{
+        .about-section h2{
+            font-size:38px;
             color:#002147;
             margin-bottom:20px;
-            font-size:30px;
         }
 
-        .placement-box p{
-            font-size:20px;
-            margin:12px 0;
-            font-weight:500;
-        }
-
-        /* FOOTER */
-
-        footer{
-            background:#002147;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:50px;
+        .about-section p{
+            font-size:18px;
+            line-height:1.8;
+            color:#444;
         }
 
         /* MOBILE RESPONSIVE */
@@ -181,220 +152,101 @@
 
             .navbar{
                 flex-direction:column;
-                gap:15px;
+                text-align:center;
+            }
+
+            .college-brand{
+                flex-direction:column;
+            }
+
+            .college-name h1{
+                font-size:22px;
             }
 
             .nav-links{
                 flex-direction:column;
-                text-align:center;
+                margin-top:20px;
             }
 
-            .page-banner h1{
+            .hero-content h1{
                 font-size:38px;
             }
 
-            .facility-card{
-                width:95%;
+            .hero-content p{
+                font-size:18px;
             }
-
-            .facility-card img{
-                height:220px;
-            }
-
-            .placement-box{
-                width:95%;
-            }
-
         }
 
     </style>
-
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<header>
 
-    <header>
+    <nav class="navbar">
 
-        <nav class="navbar">
+        <!-- LOGO + COLLEGE NAME -->
 
-            <div class="logo">JNNCE MCA</div>
+        <div class="college-brand">
 
-            <ul class="nav-links">
+            <!-- Replace this logo with your own logo image -->
+            <img src="https://cdn.corenexis.com/files/c/6116893720.png" alt="JNNCE Logo">
 
-                <li><a href="customers.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="timetable.html">Time Table</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://jams-jnnce.in/" target="_blank">Login</a></li>
+            <div class="college-name">
+                <h1>Jawaharlal Nehru New College of Engineering</h1>
+                <p>JNNCE Shimoga - MCA Department</p>
+            </div>
 
-            </ul>
+        </div>
 
-        </nav>
+        <!-- NAVIGATION -->
 
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="timetable.html">Time Table</a></li>
+            <li><a href="about.html">About</a></li>
+			<li><a href="https://jams-jnnce.in/" target="_blank">Login</a></li>
+        </ul>
 
-    <!-- BANNER -->
+    </nav>
 
-    <section class="page-banner">
+</header>
 
-        <h1>About JNNCE</h1>
+<!-- HERO SECTION -->
 
-    </section>
+<section class="hero">
 
-    <!-- COLLEGE OVERVIEW -->
+    <div class="hero-content">
 
-    <section class="content-section">
-
-        <h2>College Overview</h2>
+        <h1>Welcome to MCA Department</h1>
 
         <p>
-            Jawaharlal Nehru New College of Engineering (JNNCE) is one of the
-            premier engineering institutions providing quality technical education,
-            advanced laboratories, modern infrastructure, placements and
-            industry-oriented learning environment for students.
+            Empowering Future IT Professionals Through Innovation & Excellence
         </p>
 
-    </section>
-
-    <!-- FACILITIES -->
-
-    <section class="content-section">
-
-        <h2>Campus Facilities</h2>
-
-    </section>
-
-    <div class="facility-container">
-
-        <!-- LIBRARY -->
-
-        <div class="facility-card">
-
-            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200" alt="Library">
-
-            <div class="facility-info">
-
-                <h3>Library</h3>
-
-                <p>
-                    Spacious digital library with thousands of technical books,
-                    journals, research papers and e-learning resources.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- HOSTEL -->
-
-        <div class="facility-card">
-
-            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1200" alt="Hostel">
-
-            <div class="facility-info">
-
-                <h3>Hostel Facility</h3>
-
-                <p>
-                    Safe and comfortable hostel accommodation with Wi-Fi,
-                    hygienic food and 24/7 security facilities.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- CAMPUS -->
-
-        <div class="facility-card">
-
-            <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1200" alt="Campus">
-
-            <div class="facility-info">
-
-                <h3>Green Campus</h3>
-
-                <p>
-                    Beautiful eco-friendly campus with smart classrooms,
-                    laboratories and modern infrastructure.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- BUS -->
-
-        <div class="facility-card">
-
-            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200" alt="Bus">
-
-            <div class="facility-info">
-
-                <h3>Bus Facility</h3>
-
-                <p>
-                    College transportation facility covering multiple routes
-                    for safe and convenient student travel.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- SPORTS -->
-
-        <div class="facility-card">
-
-            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200" alt="Sports">
-
-            <div class="facility-info">
-
-                <h3>Sports Complex</h3>
-
-                <p>
-                    Excellent sports facilities for cricket, football,
-                    volleyball, badminton and indoor games.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- AUDITORIUM -->
-
-        <div class="facility-card">
-
-            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200" alt="Auditorium">
-
-            <div class="facility-info">
-
-                <h3>Auditorium</h3>
-
-                <p>
-                    Modern auditorium equipped for seminars, workshops,
-                    technical events and cultural programs.
-                </p>
-
-            </div>
-
-        </div>
+        <button>Explore More</button>
 
     </div>
 
-  
+</section>
 
-    <!-- FOOTER -->
+<!-- ABOUT SECTION -->
 
-    <footer>
+<section class="about-section">
 
-        <p>© 2026 MCA Department | JNNCE Shimoga</p>
+    <h2>About MCA Department</h2>
 
-    </footer>
+    <p>
+        The MCA Department at Jawaharlal Nehru New College of Engineering
+        (JNNCE Shimoga) was established to provide quality technical education,
+        industry-oriented learning, innovation, and professional excellence in
+        the field of computer applications.
+    </p>
+
+</section>
 
 </body>
-
 </html>
